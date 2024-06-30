@@ -1,0 +1,177 @@
+/* styles.css */
+body {
+  background-color: #3b4664;
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background-color: #3b4664;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 627px;
+  width: 100%;
+}
+
+.header {
+  font-family: "Luckiest Guy";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header span {
+  font-size: 1.5rem;
+}
+
+.display {
+  font-family: "Luckiest Guy";
+  height: 136px;
+  width: 100%;
+  background-color: #1e2539;
+  padding: 20px;
+  text-align: right;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  color: #ffffff;
+}
+
+.buttons {
+  font-family: "Luckiest Guy";
+  background-color: #1e2539;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.buttons .btn {
+  height: 82px;
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-secondary {
+  background-color: #b9b9b9;
+  color: #2f3a5a;
+}
+
+.btn-primary {
+  background-color: #e96454;
+  color: white;
+}
+
+#reset-btn {
+  background-color: #4b5e8a;
+  color: #ffffff;
+}
+
+#del-btn {
+  background-color: #576c92;
+  color: #ffffff;
+}
+
+#theme-switch {
+  display: flex;
+  align-items: center;
+}
+
+#theme-switch input {
+  margin-left: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and mobile layout */
+@media (max-width: 768px) {
+  .display {
+    font-size: 2rem;
+    height: 100px;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+
+  .buttons .btn {
+    height: 70px;
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+}
+
+/* Smaller mobile layout */
+@media (max-width: 600px) {
+  .calculator {
+    padding: 10px;
+  }
+
+  .header span {
+    font-size: 1.2rem;
+  }
+
+  .display {
+    font-size: 1.8rem;
+    height: 80px;
+    padding: 10px;
+  }
+
+  .buttons {
+    gap: 6px;
+  }
+
+  .buttons .btn {
+    height: 60px;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Extra small mobile layout */
+@media (max-width: 400px) {
+  .calculator {
+    padding: 5px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header span {
+    font-size: 1rem;
+  }
+
+  .display {
+    font-size: 1.5rem;
+    height: 60px;
+    padding: 10px;
+  }
+
+  .buttons {
+    gap: 4px;
+  }
+
+  .buttons .btn {
+    height: 50px;
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  .theme-switch {
+    margin-top: 10px;
+  }
+}
